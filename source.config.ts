@@ -7,6 +7,7 @@ import {
 
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
+import remarkDirective from "remark-directive";
 
 import { z } from "zod";
 
@@ -77,7 +78,7 @@ export const docs = defineDocs({
 
 export default defineConfig({
   mdxOptions: {
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [remarkMath, remarkDirective],
     rehypePlugins: (v) => [rehypeKatex, ...v],
   },
 });

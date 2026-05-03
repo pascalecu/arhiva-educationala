@@ -29,6 +29,7 @@
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "rehype-katex": "^7.0.1",
+    "remark-directive": "^4.0.0",
     "remark-math": "^6.0.0",
     "tailwind-merge": "^3.4.0",
     "zod": "^4.1.13"
