@@ -1,20 +1,21 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 int main() {
-    char s[100];
-    cin >> s;
+    string str = "roalgo este cel mai bun server din romania";
 
-    cout << s << '\n';
+    size_t first = str.find('e');         // 7
+    size_t last = str.find_last_of('e');  // 28
 
-    // Sare peste următorul caracter, de obicei spațiu sau newline.
-    cin.get();
+    if (first != string::npos) {
+        cout << first << '\n';
+    }
 
-    // Citește cel mult 100 de caractere, până la newline,
-    // dar sare și de acesta.
-    cin.getline(s, 100);
+    if (last != string::npos) {
+        cout << last << '\n';
+    }
 
-    cout << s << '\n';
     return 0;
 }

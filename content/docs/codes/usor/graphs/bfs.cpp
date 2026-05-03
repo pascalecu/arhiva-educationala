@@ -1,21 +1,3 @@
-// --8<-- [start:dfs]
-vector<vector<int>> graf;
-
-void dfs(int nod, vector<bool>& vizitat) {
-    vizitat[nod] = true;
-
-    // Ca exemplu
-    cout << nod << ' ';
-
-    for (auto vecin : graf[nod]) {
-        if (!vizitat[vecin]) {
-            dfs(vecin, vizitat);
-        }
-    }
-}
-// --8<-- [end:dfs]
-
-// --8<-- [start:bfs]
 vector<vector<int>> graf;
 vector<int> distanta;
 queue<int> q;
@@ -36,4 +18,3 @@ void bfs(int nod_start) {
         }
     }
 }
-// --8<-- [end:bfs]

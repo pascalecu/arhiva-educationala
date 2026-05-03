@@ -61,9 +61,7 @@ Mai jos puteți găsi implementarea în C++ a cmmdc-ului și a cmmmc-ului, progr
 
 Pentru calcularea CMMMC-ului, trebuie avut grijă să împărțim mai întâi la $$cmmdc(a, b)$$ și apoi să înmulțim cu $$b$$, pentru a evita un potențial overflow.
 
-```cpp
---8<-- "usor/divizibilitate/cmmmc.cpp"
-```
+<include lang="cpp">../codes/usor/divizibilitate/cmmmc.cpp</include>
 
 <Callout type="tip">
   C++17 oferă `std::gcd()` și `std::lcm()` în `<numeric>`, deci nu este nevoie să reimplementați algoritmul dacă aveți acces la un asemenea compilator.
@@ -109,9 +107,7 @@ if (n % d == 0) {
 
 Fiecare tip de întrebare a fost implementat folosind o funcție separată pentru a arăta diferențele ce pot apărea de la un tip de întrebare la alta.
 
-```cpp
---8<-- "usor/divizibilitate/divizibilitate.cpp"
-```
+<include lang="cpp">../codes/usor/divizibilitate/divizibilitate.cpp</include>
 
 ## Probleme suplimentare
 
