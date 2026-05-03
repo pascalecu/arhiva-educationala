@@ -1,4 +1,4 @@
-char sursa[11] = "hello ";
+char sursa[11] = "hello";
 char destinatie[11] = "world";
 
 // Se va afișa "hello world"
