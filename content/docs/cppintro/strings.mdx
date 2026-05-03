@@ -41,7 +41,7 @@ Putem simplifica lucrul cu caractere folosind valorile ASCII, fără a gestiona 
 - **Litere**: Adăugați sau scădeți 32 pentru a transforma între litere mari și mici.
 
 ```cpp
---8 < --"cppintro/strings/strings01.cpp"
+--8<-- "cppintro/strings/strings01.cpp"
 ```
 
 Lista completă a codurilor pentru caractere se găsește [aici](https://www.sciencebuddies.org/science-fair-projects/references/ascii-table). Pentru conveniență, o voi reproduce aici:
@@ -104,7 +104,7 @@ O valoare diferită de zero în cazul în care caracterul este un caracter numer
 #### Exemplu
 
 ```c++
---8 < --"cppintro/strings/strings02.cpp:isdigit"
+--8<-- "cppintro/strings/strings02.cpp:isdigit"
 ```
 
 ### Funcția `isalpha`
@@ -129,7 +129,7 @@ O valoare diferită de zero în cazul în care caracterul este alfabetic, zero �
 #### Exemplu
 
 ```cpp
---8 < --"cppintro/strings/strings02.cpp:isalpha"
+--8<-- "cppintro/strings/strings02.cpp:isalpha"
 ```
 
 ### Funcția `isalnum`
@@ -159,7 +159,7 @@ O valoare diferită de zero în cazul în care caracterul este alfanumeric, zero
 #### Exemplu
 
 ```cpp
---8 < --"cppintro/strings/strings02.cpp:isalnum"
+--8<-- "cppintro/strings/strings02.cpp:isalnum"
 ```
 
 ### Funcțiile `islower` și `isupper`
@@ -182,7 +182,7 @@ O valoare diferită de zero în cazul în care caracterul este mic, respectiv ma
 #### Exemplu
 
 ```cpp
---8 < --"cppintro/strings/strings02.cpp:islower"
+--8<-- "cppintro/strings/strings02.cpp:islower"
 
       --8
     < --"cppintro/strings/strings02.cpp:isupper"
@@ -208,7 +208,7 @@ Caracterul convertit sau `ch` dacă nu se poate efectua conversia.
 #### Exemplu
 
 ```cpp
---8 < --"cppintro/strings/strings02.cpp:tolower"
+--8<-- "cppintro/strings/strings02.cpp:tolower"
 
       --8
     < --"cppintro/strings/strings02.cpp:toupper"
@@ -223,7 +223,7 @@ Biblioteca `<cstring>` oferă o suită de funcții utile pentru lucrul cu șirur
 Un șir de caractere poate fi inițializat în diferite moduri. Exemplele de mai jos ilustrează câteva tehnici comune:
 
 ```cpp
---8 < --"cppintro/strings/strings03.cpp"
+--8<-- "cppintro/strings/strings03.cpp"
 ```
 
 ### Citirea șirurilor de caractere
@@ -243,7 +243,7 @@ Citirea fără o funcție specifică se poate face cu cin, dar se va citi până
 Există și funcția `cin.get()`, care poate fi folosit fie pentru un singur caracter, fie pentru a citi $$x$$ caractere, dar de obicei vom avea nevoie să citim o linie completă, deci funcția `cin.getline()` devine mai utilă.
 
 ```cpp
---8 < --"cppintro/strings/strings04.cpp"
+--8<-- "cppintro/strings/strings04.cpp"
 ```
 
 ### Funcția strlen
@@ -251,7 +251,7 @@ Există și funcția `cin.get()`, care poate fi folosit fie pentru un singur car
 Funcția strlen ia drept parametru un șir de caractere și returnează lungimea acestuia.
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strlen"
+--8<-- "cppintro/strings/strings05.cpp:strlen"
 ```
 
 ### Funcția strcpy și strncpy
@@ -261,13 +261,13 @@ Funcția `strcpy` copiază un șir de caractere în alt șir, numit destinație.
 \=== "strcpy"
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strcpy"
+--8<-- "cppintro/strings/strings05.cpp:strcpy"
 ```
 
 \=== "strncpy"
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strncpy"
+--8<-- "cppintro/strings/strings05.cpp:strncpy"
 ```
 
 ### Funcțiile strcat și strncat
@@ -277,13 +277,13 @@ Funcția `strcat` concatenează un șir 'destinatie' cu o copie a unui șir 'sur
 \=== "strcat"
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strcat"
+--8<-- "cppintro/strings/strings05.cpp:strcat"
 ```
 
 \=== "strncat"
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strncat"
+--8<-- "cppintro/strings/strings05.cpp:strncat"
 ```
 
 ### Funcția strchr și strrchr
@@ -293,13 +293,13 @@ Funcțiile `strchr` și `strrchr` returnează un pointer la prima apariție, res
 \=== "strchr"
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strchr"
+--8<-- "cppintro/strings/strings05.cpp:strchr"
 ```
 
 \=== "strrchr"
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strrchr"
+--8<-- "cppintro/strings/strings05.cpp:strrchr"
 ```
 
 ### Funcția strcmp
@@ -311,7 +311,7 @@ Funcția `strcmp` este folosită pentru a compara două șiruri de caractere. Ac
 - `1` sau o valoare mai mare decât 0 - dacă primul șir este după celălalt, alfabetic vorbind.
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strcmp"
+--8<-- "cppintro/strings/strings05.cpp:strcmp"
 ```
 
 ### Funcția strstr
@@ -319,7 +319,7 @@ Funcția `strcmp` este folosită pentru a compara două șiruri de caractere. Ac
 Această funcție primește două șiruri de caractere, s1 și s2, ca argumente și găsește prima apariție a șirului s2 în șirul s1.
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strstr"
+--8<-- "cppintro/strings/strings05.cpp:strstr"
 ```
 
 ### Funcția strtok
@@ -327,7 +327,7 @@ Această funcție primește două șiruri de caractere, s1 și s2, ca argumente 
 Funcția `strtok` împarte `str[]` conform delimitatorilor dați și returnează următorul token. Trebuie apelată într-o structură repetitivă pentru a obține toate token-urile.
 
 ```cpp
---8 < --"cppintro/strings/strings05.cpp:strtok"
+--8<-- "cppintro/strings/strings05.cpp:strtok"
 ```
 
 ## Tipul de date std::string
@@ -339,31 +339,31 @@ Pentru a putea folosi această structură de date, va trebui să includem biblio
 În ceea ce privește citirea, funcția getline va avea o sintaxă un pic diferită, fiind scrisă astfel:
 
 ```cpp
---8 < --"cppintro/strings/strings06.cpp:read"
+--8<-- "cppintro/strings/strings06.cpp:read"
 ```
 
 Sintaxa unui string va fi de tipul `string nume;`
 
 ```cpp
---8 < --"cppintro/strings/strings06.cpp:idk"
+--8<-- "cppintro/strings/strings06.cpp:idk"
 ```
 
 În mod particular, vom putea concatena două șiruri de caractere cu ușurință, folosind operatorul `+`. Totuși, trebuie să fim atenți cum folosim acest operator, pentru a evita efectuarea prea înceată a operațiilor.
 
 ```cpp
---8 < --"cppintro/strings/strings06.cpp:concat"
+--8<-- "cppintro/strings/strings06.cpp:concat"
 ```
 
 Deși în cazul numerelor naturale, aceste operații sunt echivalente, în cazul stringurilor, `+=` și `+` sunt complet diferite. Prima dintre ele concatenează șirul primit la șirul existent, cea de-a doua copiază cele două șiruri, le unește și apoi atribuie rezultatul șirului. Această diferență devine mai dramatică în situații precum cea de mai jos.
 
 ```cpp
---8 < --"cppintro/strings/strings06.cpp:loops"
+--8<-- "cppintro/strings/strings06.cpp:loops"
 ```
 
 Putem folosi și funcții specifice care caută prima sau ultima apariție a unui anumit caracter în șir, precum find sau find\_last\_of, care au complexitate liniară. Tipul returnat este size\_t, dar acesta poate fi folosit și ca int.
 
 ```cpp
---8 < --"cppintro/strings/strings07.cpp"
+--8<-- "cppintro/strings/strings07.cpp"
 ```
 
 ## Concluzii

@@ -33,7 +33,7 @@ Dacă ne gândim la un interval de tipul $$\[a, b]$$, noi vom putea efectua urm�
 Astfel, am demonstrat că putem folosi o strategie de tip divide et impera pentru a aborda această problemă, așa cum se poate vedea în segmentul de cod de mai jos:
 
 ```cpp
---8 < --"dificil/segtree/binsearch.cpp"
+--8<-- "dificil/segtree/binsearch.cpp"
 ```
 
 ### Problemă exemplu: [Hotel Queries - CSES](https://cses.fi/problemset/task/1143)
@@ -43,7 +43,7 @@ Pentru a rezolva această problemă, va trebui să folosim această tehnică pen
 Mai jos puteți vedea codul sursă pentru problema dată.
 
 ```cpp
---8 < --"dificil/segtree/hotelqueries.cpp"
+--8<-- "dificil/segtree/hotelqueries.cpp"
 ```
 
 ## Actualizări pe interval - Lazy Propagation
@@ -69,7 +69,7 @@ Ulterior, când procesăm o interogare, vom parcurge în jos drumul de la rădă
 Mai jos puteți vedea codul sursă, unde operațiile specifice metodei lazy propagation sunt explicate în detaliu. Se remarcă atenția la detalii atunci când transferăm conținutul unui query de la un nod la unul din fii, precum și faptul că realizăm actualizările imediat ce vizităm un nod.
 
 ```cpp
---8 < --"dificil/segtree/rangeupdatequeries.cpp"
+--8<-- "dificil/segtree/rangeupdatequeries.cpp"
 ```
 
 ### Problema Simple
@@ -82,7 +82,7 @@ Astfel, vom păstra pentru fiecare nod în lazy un contor care ține cont de sum
 Apoi, vom avea grijă la implementarea soluției finale să includem aceste date în răspunsul final.
 
 ```cpp
---8 < --"dificil/segtree/simple.cpp"
+--8<-- "dificil/segtree/simple.cpp"
 ```
 
 ### Problema Range Updates and Sums
@@ -95,7 +95,7 @@ Pentru a nu folosi mai mulți vectori de tip lazy, am codificat schimbările de 
 Mai jos găsiți soluția care ia accepted.
 
 ```cpp
---8 < --"dificil/segtree/rangeupdateandsums.cpp"
+--8<-- "dificil/segtree/rangeupdateandsums.cpp"
 ```
 
 ## Concluzii

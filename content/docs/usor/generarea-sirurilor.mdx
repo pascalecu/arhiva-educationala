@@ -54,7 +54,7 @@ Fiecare dintre cei $$n$$ termeni conține $$x$$, iar apoi următorii termeni au 
 Pentru a afla în mod eficient dacă toate valorile aparțin aceleiași progresii aritmetice, trebuie să ținem un [vector de frecvență](./frequency-arrays.mdx) în care memorăm aceste valori, iar mai apoi să verificăm dacă diferențele între oricare două valori distincte consecutive sunt egale.
 
 ```cpp
---8 < --"usor/gen_sir/progresie3.cpp"
+--8<-- "usor/gen_sir/progresie3.cpp"
 ```
 
 #### Problemă rezolvată - [sir1 pbinfo](https://www.pbinfo.ro/probleme/243/sir1)
@@ -62,7 +62,7 @@ Pentru a afla în mod eficient dacă toate valorile aparțin aceleiași progresi
 Pentru a rezolva această problemă, ne folosim de proprietățile sumei lui Gauss (progresie aritmetică cu rația 1). Astfel, aflăm câte grupe complete de valori există în șir și apoi aflăm valoarea corespunzătoare ultimei grupe rămase.
 
 ```cpp
---8 < --"usor/gen_sir/sir1.cpp"
+--8<-- "usor/gen_sir/sir1.cpp"
 ```
 
 ### Progresii geometrice
@@ -145,7 +145,7 @@ unde $$\lfloor x \rfloor$$ reprezintă partea întreagă a lui $$x$$, iar $$5^k$
 </Callout>
 
 ```cpp
---8 < --"usor/gen_sir/trailing_zeroes.cpp"
+--8<-- "usor/gen_sir/trailing_zeroes.cpp"
 ```
 
 ### Șirul lui Fibonacci
@@ -171,7 +171,7 @@ Datorită acestui fapt, numerele Fibonacci cresc destul de repede, deja cel de-a
 Pentru a afla cel de-al $$n$$-lea număr Fibonacci, putem folosi un algoritm destul de simplu, care se bazează pe un for sau un while.
 
 ```cpp
---8 < --"usor/gen_sir/fibonacci.cpp"
+--8<-- "usor/gen_sir/fibonacci.cpp"
 ```
 
 <Callout type="note" title="Algoritm mai rapid">
@@ -186,7 +186,7 @@ Pentru a afla cel de-al $$n$$-lea număr Fibonacci, putem folosi un algoritm des
 Pentru a rezolva această problemă, trebuie să aflăm toate valorile Fibonacci mai mici sau egale cu $$n$$, iar mai apoi să construim suma folosind termeni în ordine descrescătoare.
 
 ```cpp
---8 < --"usor/gen_sir/fibosum.cpp"
+--8<-- "usor/gen_sir/fibosum.cpp"
 ```
 
 ## Concluzii
