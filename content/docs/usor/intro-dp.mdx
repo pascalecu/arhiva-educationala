@@ -114,15 +114,11 @@ Mai jos puteți găsi abordarea recursivă și cea iterativă a problemei.
 
 \=== "Recursiv"
 
-```cpp
---8 < --"usor/dp/frog1_rec.cpp"
-```
+<include lang="cpp">../codes/usor/dp/frog1_rec.cpp</include>
 
 \=== "Iterativ"
 
-```cpp
---8 < --"usor/dp/frog1_iter.cpp"
-```
+<include lang="cpp">../codes/usor/dp/frog1_iter.cpp</include>
 
 {/* Second Problem */}
 
@@ -141,15 +137,11 @@ Cazul de bază constă în faptul că $$dp\_1 = 0$$ și $$dp\_2 = |v\_1 - v\_2|$
 
 \=== "Recursiv"
 
-```cpp
---8 < --"usor/dp/frog2_rec.cpp"
-```
+<include lang="cpp">../codes/usor/dp/frog2_rec.cpp</include>
 
 \=== "Iterativ"
 
-```cpp
---8 < --"usor/dp/frog2_iter.cpp"
-```
+<include lang="cpp">../codes/usor/dp/frog2_iter.cpp</include>
 
 {/* Third Problem */}
 
@@ -197,9 +189,7 @@ Pentru asta ne vom utiliza de o recursie care are ca parametri de stare
 suma de bani care a rămas de plătit, numărul de monede pe care l-am
 utilizat până acum și vectorul de denominații accesibile.
 
-```cpp
---8 < --"usor/dp/moneda_rec.cpp"
-```
+<include lang="cpp">../codes/usor/dp/moneda_rec.cpp</include>
 
 \=== "Iterativ"
 
@@ -210,9 +200,7 @@ acest lucru vom ține un vector dp de forma următoare:
 dp\[sumă de bani totală] = numărul de bacnote necesare pentru a ajunge la
 această sumă de bani.
 
-```cpp
---8 < --"usor/dp/moneda_iter.cpp"
-```
+<include lang="cpp">../codes/usor/dp/moneda_iter.cpp</include>
 
 {/* Fourth Problem */}
 
@@ -241,21 +229,15 @@ Din nou ca la celelalte probleme, puteți găsi mai jos abordarea recursivă și
 
 \=== "Recursiv"
 
-```cpp
---8 < --"usor/dp/vacation_rec.cpp"
-```
+<include lang="cpp">../codes/usor/dp/vacation_rec.cpp</include>
 
 \=== "Iterativ"
 
-```cpp
---8 < --"usor/dp/vacation_iter.cpp"
-```
+<include lang="cpp">../codes/usor/dp/vacation_iter.cpp</include>
 
 \=== "Iterativ optimizat"
 
-```cpp
---8 < --"usor/dp/vacation_iter_optim.cpp"
-```
+<include lang="cpp">../codes/usor/dp/vacation_iter_optim.cpp</include>
 
 Deoarece avem nevoie doar de ultimele două linii, nu vom ține toată
 matricea, mutând mereu valorile calculate pe prima linie pentru a păstra
@@ -278,9 +260,7 @@ Pentru a afla $$dp\_{i,j}$$, va trebui să ne raportăm la valorile de pe poziț
   și simplu să efectuăm operațiile de adunare și să folosim scăderi în mod
   convenabil, reușind astfel să optimizăm soluția.
 
-  ```cpp
-  --8 < --"usor/dp/array_description.cpp"
-  ```
+  <include lang="cpp">../codes/usor/dp/array_description.cpp</include>
 </Callout>
 
 {/* Sixth problem */}
@@ -296,9 +276,7 @@ Astfel, $$dp\_{i,j} = dp\_{i-1,j} + dp\_{i,j-1}$$.
 
 ### Soluție
 
-```cpp
---8 < --"usor/dp/grid1.cpp"
-```
+<include lang="cpp">../codes/usor/dp/grid1.cpp</include>
 
 {/* Seventh problem */}
 
@@ -307,15 +285,11 @@ Astfel, $$dp\_{i,j} = dp\_{i-1,j} + dp\_{i,j-1}$$.
 
 \=== "Recursiv"
 
-```cpp
---8 < --"usor/dp/sumtri1_rec.cpp"
-```
+<include lang="cpp">../codes/usor/dp/sumtri1_rec.cpp</include>
 
 \=== "Iterativ"
 
-```cpp
---8 < --"usor/dp/sumtri1_iter.cpp"
-```
+<include lang="cpp">../codes/usor/dp/sumtri1_iter.cpp</include>
 
 {/* Extra stuff */}
 

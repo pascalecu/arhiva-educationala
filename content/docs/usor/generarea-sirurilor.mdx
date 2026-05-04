@@ -53,17 +53,14 @@ Fiecare dintre cei $$n$$ termeni conține $$x$$, iar apoi următorii termeni au 
 
 Pentru a afla în mod eficient dacă toate valorile aparțin aceleiași progresii aritmetice, trebuie să ținem un [vector de frecvență](./frequency-arrays.mdx) în care memorăm aceste valori, iar mai apoi să verificăm dacă diferențele între oricare două valori distincte consecutive sunt egale.
 
-```cpp
---8 < --"usor/gen_sir/progresie3.cpp"
-```
+<include lang="cpp">../codes/usor/gen_sir/progresie3.cpp</include>
+
 
 #### Problemă rezolvată - [sir1 pbinfo](https://www.pbinfo.ro/probleme/243/sir1)
 
 Pentru a rezolva această problemă, ne folosim de proprietățile sumei lui Gauss (progresie aritmetică cu rația 1). Astfel, aflăm câte grupe complete de valori există în șir și apoi aflăm valoarea corespunzătoare ultimei grupe rămase.
 
-```cpp
---8 < --"usor/gen_sir/sir1.cpp"
-```
+<include lang="cpp">../codes/usor/gen_sir/sir1.cpp</include>
 
 ### Progresii geometrice
 
@@ -144,9 +141,7 @@ unde $$\lfloor x \rfloor$$ reprezintă partea întreagă a lui $$x$$, iar $$5^k$
   Acest rezultat este cunoscut sub numele de formula lui Legendre.
 </Callout>
 
-```cpp
---8 < --"usor/gen_sir/trailing_zeroes.cpp"
-```
+<include lang="cpp">../codes/usor/gen_sir/trailing_zeroes.cpp</include>
 
 ### Șirul lui Fibonacci
 
@@ -170,9 +165,7 @@ Datorită acestui fapt, numerele Fibonacci cresc destul de repede, deja cel de-a
 
 Pentru a afla cel de-al $$n$$-lea număr Fibonacci, putem folosi un algoritm destul de simplu, care se bazează pe un for sau un while.
 
-```cpp
---8 < --"usor/gen_sir/fibonacci.cpp"
-```
+<include lang="cpp">../codes/usor/gen_sir/fibonacci.cpp</include>
 
 <Callout type="note" title="Algoritm mai rapid">
   Există un algoritm mai rapid, care rulează în $$\mathcal{O}(\log n)$$ care se bazează pe
@@ -185,9 +178,7 @@ Pentru a afla cel de-al $$n$$-lea număr Fibonacci, putem folosi un algoritm des
 
 Pentru a rezolva această problemă, trebuie să aflăm toate valorile Fibonacci mai mici sau egale cu $$n$$, iar mai apoi să construim suma folosind termeni în ordine descrescătoare.
 
-```cpp
---8 < --"usor/gen_sir/fibosum.cpp"
-```
+<include lang="cpp">../codes/usor/gen_sir/fibosum.cpp</include>
 
 ## Concluzii
 

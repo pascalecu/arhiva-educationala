@@ -31,9 +31,7 @@ Citirea datelor se face folosind `std::cin` și operatorul `>>`, iar afișarea d
 
 După ce compilați programul și nu apar erori, va trebui să rulați executabilul și să introduceți datele de intrare conform descrierii problemei. Dacă totul este corect, veți obține rezultatul așteptat.
 
-```cpp
---8 < --"cppintro/io/io1.cpp"
-```
+<include lang="cpp">../codes/cppintro/io/io1.cpp</include>
 
 Dacă $$n = 9$$, $$a = 11$$ și $$b = 14$$, programul va afișa următoarele date:
 
@@ -57,9 +55,7 @@ Pentru a citi și afișa din fișiere, vom avea nevoie de biblioteca `<fstream>`
 
 Mai întâi, trebuie să specificăm programului de unde să preia datele și de unde să le afișeze. Tipul `ifstream` declară un flux de citire din fișier, `ofstream` declară unul de scriere în fișier.
 
-```cpp
---8 < --"cppintro/io/io2.cpp"
-```
+<include lang="cpp">../codes/cppintro/io/io2.cpp</include>
 
 <Callout type="obs" title="Numele fișierelor">
   Deși aici am folosit `fin` și `fout` pentru a putea menționa
@@ -71,9 +67,7 @@ Mai întâi, trebuie să specificăm programului de unde să preia datele și de
 
 Programul de mai sus va fi identic, singura diferență fiind adăugarea facilităților care ne permit să citim datele din fișiere.
 
-```cpp
---8 < --"cppintro/io/io3.cpp"
-```
+<include lang="cpp">../codes/cppintro/io/io3.cpp</include>
 
 <Callout type="obs" title="Citirea unui număr necunoscut de valori">
   Dacă avem de citit un număr necunoscut de valori, trebuie să folosim
@@ -99,9 +93,7 @@ Sintaxa ei este `setprecision(int n)`, unde $$n$$ este numărul de cifre folosit
 
 De exemplu, dacă vrem să afișăm primele 7 zecimale ale lui $$\pi$$, putem face asta folosind următoarele instrucțiuni:
 
-```cpp
---8 < --"cppintro/io/io4.cpp"
-```
+<include lang="cpp">../codes/cppintro/io/io4.cpp</include>
 
 <Callout type="obs" title="Observație">
   Fără manipulatorul `fixed`, `setprecision` controlează numărul

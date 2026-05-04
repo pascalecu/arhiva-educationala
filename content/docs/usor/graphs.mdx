@@ -314,15 +314,11 @@ Ca o recapitulare (sau de fapt comparație) între BFS și DFS, să comparăm fi
 
 \=== "DFS"
 
-```cpp
---8 < --"usor/graphs/dfsbfs.cpp:dfs"
-```
+<include lang="cpp">../codes/usor/graphs/dfs.cpp</include>
 
 \=== "BFS"
 
-```cpp
---8 < --"usor/graphs/dfsbfs.cpp:bfs"
-```
+<include lang="cpp">../codes/usor/graphs/bfs.cpp</include>
 
 ## Problema connected components
 <ProblemPreview url="https://kilonova.ro/problems/2036" />
@@ -331,9 +327,7 @@ Se dă un graf neorientat $$G$$ cu $$N$$ noduri și $$M$$ muchii. Să se afle c�
 
 Pentru a afla numărul de componente conexe ale unui graf, putem folosi parcurgerea DFS pentru a afla toate nodurile din care apelăm DFS din funcția `main`, acesta fiind și răspunsul la problema noastră.
 
-```cpp
---8 < --"usor/graphs/connectedcomponents.cpp"
-```
+<include lang="cpp">../codes/usor/graphs/connectedcomponents.cpp</include>
 
 ## Drumuri minime. Parcurgerea BFS
 
@@ -372,9 +366,7 @@ Se dă un graf neorientat $$G$$ cu $$N$$ noduri și $$M$$ muchii, precum și un 
 
 Pentru a rezolva această problemă, vom pleca cu un BFS din nodul $$S$$ și vom afla pe parcurs, distanțele minime față de toate celelalte noduri.
 
-```cpp
---8 < --"usor/graphs/simpleshortestpath.cpp"
-```
+<include lang="cpp">../codes/usor/graphs/simpleshortestpath.cpp</include>
 
 ## Problema grarb
 <ProblemPreview url="https://www.infoarena.ro/problema/grarb" />
@@ -383,9 +375,7 @@ Se dă un graf $$G$$ neorientat cu $$N$$ noduri numerotate de la 1 la $$N$$ și 
 
 Această problemă se împarte în două subprobleme relativ ușor de identificat - aflarea componentelor conexe ale grafului (dacă avem $$C$$ componente conexe, va fi nevoie de $$C - 1$$ muchii pentru a transforma graful într-unul conex), precum și aflarea numărului de muchii care trebuie scoase pentru a transforma graful în arbore (la final, trebuie să ne rămână $$N-1$$ muchii). Astfel, vom avea nevoie de $$C - 1$$ muchii noi și va trebui să scoatem $$M + C - 1 - (N - 1)$$ = $$M + C - N$$ muchii pentru a avea un arbore.
 
-```cpp
---8 < --"usor/graphs/grarb.cpp"
-```
+<include lang="cpp">../codes/usor/graphs/grarb.cpp</include>
 
 ## Problema graf
 <ProblemPreview url="https://kilonova.ro/problems/49" />
@@ -396,9 +386,7 @@ Pentru a rezolva această problemă, va trebui mai întâi să aflăm folosind o
 
 Codul sursă se poate viziona mai jos.
 
-```cpp
---8 < --"usor/graphs/graf.cpp"
-```
+<include lang="cpp">../codes/usor/graphs/graf.cpp</include>
 
 ## Detectarea unui ciclu simplu - Round Trip
 <ProblemPreview url="https://cses.fi/problemset/task/1669/" />
@@ -411,9 +399,7 @@ Codul sursă se poate viziona mai jos.
 
 Mai jos găsiți implementarea C++ a soluției descrise mai sus.
 
-```cpp
---8 < --"usor/graphs/roundtrip.cpp"
-```
+<include lang="cpp">../codes/usor/graphs/roundtrip.cpp</include>
 
 ## Probleme suplimentare
 
